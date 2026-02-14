@@ -15,3 +15,7 @@ This will print the list of tasks to the console.  The tasks are also saved to a
 ## Persistence
 
 The todo list is now persisted to a file named `todo.txt`.  Each task is written on a new line.  To view the list, run the script again.  To clear the list, delete the `todo.txt` file.
+
+## Startup
+
+The script now loads existing tasks from `todo.txt` when it starts, displaying them before accepting new tasks.

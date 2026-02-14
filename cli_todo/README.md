@@ -10,4 +10,8 @@ To add tasks, run the script with the tasks as arguments:
 python main.py task1 task2 task3
 ```
 
-This will print the list of tasks to the console.
+This will print the list of tasks to the console.  The tasks are also saved to a file named `todo.txt` in the project directory.
+
+## Persistence
+
+The todo list is now persisted to a file named `todo.txt`.  Each task is written on a new line.  To view the list, run the script again.  To clear the list, delete the `todo.txt` file.

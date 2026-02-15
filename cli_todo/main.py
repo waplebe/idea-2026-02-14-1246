@@ -37,6 +37,20 @@ def main():
         except FileNotFoundError:
             pass
 
+    # Add task to the list if it doesn't already exist
+    for task in args.task:
+        try:
+            with open("todo.txt", "r") as f:
+                existing_tasks = [line.strip() for line in f.readlines()]
+                if task not in existing_tasks:
+                    with open("todo.txt", "a") as f:
+                        f.write(f"{task}\n")
+                    print(f"Task '{task}' added.")
+        except FileNotFoundError:
+            with open("todo.txt", "w") as f:
+                f.write(f"{task}\n")
+            print(f"Task '{task}' added.")
+
 
 if __name__ == "__main__":
     main()

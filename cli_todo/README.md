@@ -14,7 +14,7 @@ This will print the list of tasks to the console.  The tasks are also saved to a
 
 ## Persistence
 
-The todo list is now persisted to a file named `todo.txt`.  Each task is written on a new line.  To view the list, run the script again.  To clear the list, delete the `todo.txt` file.
+The todo list is now persisted to a file named `todo.txt`. Each task is written on a new line. To view the list, run the script again. To clear the list, delete the `todo.txt` file.
 
 ## Startup
 
@@ -22,4 +22,8 @@ The script now loads existing tasks from `todo.txt` when it starts, displaying t
 
 ## Clearing the List
 
-The script can now clear the todo list.  If you run the script without any arguments, it will delete the `todo.txt` file, effectively clearing the list.
+The script can now clear the todo list. If you run the script without any arguments, it will delete the `todo.txt` file, effectively clearing the list.
+
+## Adding Existing Tasks
+
+The script now checks if a task already exists in the todo list before adding it. This prevents duplicate entries.

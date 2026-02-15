@@ -19,3 +19,7 @@ The todo list is now persisted to a file named `todo.txt`.  Each task is written
 ## Startup
 
 The script now loads existing tasks from `todo.txt` when it starts, displaying them before accepting new tasks.
+
+## Clearing the List
+
+The script can now clear the todo list.  If you run the script without any arguments, it will delete the `todo.txt` file, effectively clearing the list.

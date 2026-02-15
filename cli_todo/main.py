@@ -28,5 +28,15 @@ def main():
     except FileNotFoundError:
         pass
 
+    # Clear the todo list when the script is run without arguments
+    if len(args.task) == 0:
+        try:
+            with open("todo.txt", "w") as f:
+                f.write("")
+            print("\nTodo list cleared.")
+        except FileNotFoundError:
+            pass
+
+
 if __name__ == "__main__":
     main()

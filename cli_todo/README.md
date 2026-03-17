@@ -100,6 +100,14 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+## Improvements
+
+*   **Task Prioritization:** Added the ability to assign a priority level (High, Medium, Low) to each task.  Tasks are displayed sorted by priority.
+*   **Task Due Dates:** Added support for setting due dates for tasks.  Tasks are displayed sorted by due date.
+*   **Filtering by Status:** Added the ability to filter tasks by their status (Active, Completed).
+*   **Improved Error Messages:** Enhanced error messages to provide more specific information to the user.
+*   **Command History:** Implemented basic command history using the `history` command.
+
 ## File Structure
 
 *   `cli_todo/README.md`:  Documentation for the project.
